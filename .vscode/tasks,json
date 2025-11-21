@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar con SFML",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}\\src\\*.cpp",
+                "-o",
+                "${workspaceFolder}\\bin\\telescopio.exe",
+                "-I", "C:\\SFML-3.0.2\\include",
+                "-L", "C:\\SFML-3.0.2\\lib",
+                "-lsfml-graphics-d",
+                "-lsfml-window-d",
+                "-lsfml-system-d",
+                "-std=c++17"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compilador g++ con SFML - Salida a bin/"
+        },
+        {
+            "label": "Compilar y Ejecutar",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "g++ -g ${workspaceFolder}\\src\\*.cpp -o ${workspaceFolder}\\bin\\telescopio.exe -I C:\\SFML-3.0.2\\include -L C:\\SFML-3.0.2\\lib -lsfml-graphics-d -lsfml-window-d -lsfml-system-d -std=c++17 && cd ${workspaceFolder}\\bin && telescopio.exe"
+            ],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "Compila y ejecuta desde bin/"
+        }
+    ]
+}
