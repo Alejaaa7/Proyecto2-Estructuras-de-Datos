@@ -169,7 +169,7 @@ void HUD::renderizar(sf::RenderWindow& ventana, const Camera& camara,
     string titulo = "TELESCOPIO VIRTUAL";
     sf::Text tituloTexto(fuente);
     tituloTexto.setString(titulo);
-    tituloTexto.setCharacterSize(30);
+    tituloTexto.setCharacterSize(40);
     tituloTexto.setFillColor(colorNeon);
     tituloTexto.setStyle(sf::Text::Bold);
 
@@ -179,7 +179,7 @@ void HUD::renderizar(sf::RenderWindow& ventana, const Camera& camara,
 
     sf::Text sombraTitulo(fuente);
     sombraTitulo.setString(titulo);
-    sombraTitulo.setCharacterSize(24);
+    sombraTitulo.setCharacterSize(40);
     sombraTitulo.setFillColor(sf::Color(0, 0, 0, 200));
     sombraTitulo.setStyle(sf::Text::Bold);
     sombraTitulo.setPosition({tituloTexto.getPosition().x + 3, tituloTexto.getPosition().y + 3});
