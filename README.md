@@ -2,6 +2,8 @@
 
 Simulador de telescopio espacial de grado profesional desarrollado en C++ con SFML, implementando estructuras de datos avanzadas para gestión eficiente de objetos astronómicos.
 
+![Imagen Interfaz](bin/telescopiovirtual.jpg)
+
 ---
 
 ## **Descripción**
